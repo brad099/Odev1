@@ -14,16 +14,10 @@ public class Cubeman : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Name : " + spherescript.PlayerName);
-        Debug.Log("Speed is : " + spherescript.speed);
-        Debug.Log("Health : " + spherescript.health);
-        Debug.Log("Your current Location : " + spherescript.location2);
-    }
-
-
-
-    void Update()
-    {
         sph.GetComponent<Renderer>().material.color = Color.green;
+        Debug.Log("Name : " + spherescript.PlayerName + 
+                  "Speed is : " + spherescript.speed + 
+                  "Health : " + spherescript.health + 
+                  "Your current Location : " + spherescript.location2);
     }
 }
